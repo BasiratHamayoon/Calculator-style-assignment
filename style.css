@@ -12,18 +12,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
     margin:auto; 
     margin-top: 100px; 
     }
     
     #display {
-    width: 90%;
+    width: 80%;
     height: 30px;
-    background-color: #dfd76f;
-    border: 1px solid #dfd76f;
+    background-color: #415527;
+    border: 1px solid #415527;
     border-radius: 5px;
-    padding: 10px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 24px;
     font-weight: bold;
     text-align: right;
@@ -76,6 +81,7 @@ body {
         #keypad .operator .double .doublerow .operblue:hover{
         background-color: #504f4f;
         }
-        #keypad .operblue{
+        #keypad .operatorblue::after{
+            content: '';
             background-color: aqua;
         }
