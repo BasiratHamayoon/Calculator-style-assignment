@@ -1,0 +1,81 @@
+body {
+    background-color: #161414;
+    }
+    
+    #calculator {
+    width: 250px;
+    height: 350px;
+    background-color: #2e2b2b;
+    border: 1px solid #2e2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin:auto; 
+    margin-top: 100px; 
+    }
+    
+    #display {
+    width: 90%;
+    height: 30px;
+    background-color: #dfd76f;
+    border: 1px solid #dfd76f;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    }
+    
+    #keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 90%;
+    }
+    #keypad button {
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    background-color: #504f4f;
+    border: 1px solid #504f4f;
+    border-radius: 5px;
+    cursor: pointer;
+    color: azure;
+    font-weight: bolder;
+    }
+    
+    #keypad button:hover {
+    background-color: #777575;
+    }
+    
+    #keypad .double {
+    grid-column: span 2;
+    background-color: #c01a1a;
+    border-color: #c01a1a;
+    }
+    #keypad .doublerow{
+        grid-row: span 2;
+        width: 100%;
+        height: 110px ;
+    }
+    #keypad .double:hover{
+     background-color: #cf4c4c;
+    }
+    
+    #keypad .operator .double .doublerow .operblue{
+        background-color: #504f4f;
+        }
+        
+        #keypad .operator .double .doublerow .operblue:hover{
+        background-color: #504f4f;
+        }
+        #keypad .operblue{
+            background-color: aqua;
+        }
